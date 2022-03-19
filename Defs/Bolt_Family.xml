@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <SupressionVeteancy.GunPlatformDef>
+        <defName>boltakszyn</defName>
+        <label>Bolt action guns</label>
+        <names>
+            <li>kar98</li>
+            <li>kar98k</li>
+            <li>mosin</li>
+            <li>nagant</li>
+            <li>lee</li>
+            <li>enfield</li>
+            <li>leeenfield</li>
+            <li>awp</li>
+            <li>awm</li>
+            <li>m24</li>
+            <li>toz</li>
+            <li>98k</li>
+            <li>98</li>
+            <li>kar</li>
+        </names>
+
+        <hand>right</hand>
+
+        <!-- ===== NOT USED YET ===== -->
+        <!-- this is divided by 1000 and added per reload exp and divided by 10000 and added per shot exp -->
+
+        <!--<xpGain>1</xpGain>-->
+
+        <!-- x is percentage, y is direct mult -->
+        <reloadSpeedCurve>
+            <points>
+                <li>0, 1.25</li>
+                <li>0.5, 1</li>
+                <li>1, 0.5</li>
+            </points>
+        </reloadSpeedCurve>
+        <recoilCurve>
+           <li>
+                <similarTo>AmmoSet_RifleIntermediate</similarTo>
+                <curve>
+                        <points>
+                            <li>0, 1</li>
+                        </points>
+                </curve>
+           </li>
+        </recoilCurve>
+
+        <accuracyCurve>
+            <li>
+                <similarTo>AmmoSet_Rifle</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.5</li>
+                        <li>0.3, 1.25</li>
+                        <li>0.5, 1</li>
+                        <li>0.6, 0.9</li>
+                    </points>
+                </curve>
+            </li>
+        </accuracyCurve>
+    </SupressionVeteancy.GunPlatformDef>
+</Defs>

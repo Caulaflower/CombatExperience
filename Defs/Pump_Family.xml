@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <SupressionVeteancy.GunPlatformDef>
+        <defName>Pump</defName>
+        <label>Pump action guns</label>
+        <names>
+            <li>pump</li>
+            <li>870</li>
+            <li>590</li>
+            <li>m590</li>
+            <li>m870</li>
+            <li>mossberg</li>
+        </names>
+        <!-- ===== NOT USED YET ===== -->
+        <!-- this is divided by 1000 and added per reload exp and divided by 10000 and added per shot exp -->
+
+        <!--<xpGain>1</xpGain>-->
+
+        <!-- x is percentage, y is direct mult -->
+        <reloadSpeedCurve>
+            <points>
+                <li>0, 1.5</li>
+                <li>0.5, 1</li>
+                <li>1, 0.5</li>
+            </points>
+        </reloadSpeedCurve>
+        <recoilCurve>
+           <li>
+                <similarTo>AmmoSet_Shotgun</similarTo>
+                <curve>
+                        <points>
+                            <li>0, 1</li>
+                        </points>
+                </curve>
+           </li>
+        </recoilCurve>
+
+        <accuracyCurve>
+            <li>
+                <similarTo>AmmoSet_Shotgun</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.7</li>
+                        <li>0.3, 1.5</li>
+                        <li>0.5, 1.25</li>
+                        <li>0.6, 1.15</li>
+                        <li>0.7, 1</li>
+                        <li>1, 0.7</li>
+                    </points>
+                </curve>
+            </li>
+        </accuracyCurve>
+    </SupressionVeteancy.GunPlatformDef>
+</Defs>

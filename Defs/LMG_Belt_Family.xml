@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <SupressionVeteancy.GunPlatformDef>
+        <defName>BeltAction</defName>
+        <label>Belt fed machine guns</label>
+        <names>
+            <li>maxim</li>
+            <li>m240</li>
+            <li>240</li>
+            <li>240b</li>
+            <li>m240b</li>
+        </names>
+
+        <hand>ambi</hand>
+
+        <!-- ===== NOT USED YET ===== -->
+        <!-- this is divided by 1000 and added per reload exp and divided by 10000 and added per shot exp -->
+
+        <!--<xpGain>1</xpGain>-->
+
+        <!-- x is percentage, y is direct mult -->
+        <reloadSpeedCurve>
+            <points>
+                <li>0, 1.75</li>
+                <li>0.5, 1.25</li>
+                <li>1, 0.85</li>
+            </points>
+        </reloadSpeedCurve>
+        <recoilCurve>
+           <li>
+                <similarTo>AmmoSet_RifleIntermediate</similarTo>
+                <curve>
+                        <points>
+                            <li>0, 1</li>
+                            <li>1, 0.75</li>
+                        </points>
+                </curve>
+           </li>
+           <li>
+            <similarTo>AmmoSet_Rifle</similarTo>
+            <curve>
+                    <points>
+                        <li>0, 1</li>
+                        <li>1, 0.8</li>
+                    </points>
+            </curve>
+       </li>
+        </recoilCurve>
+
+        <accuracyCurve>
+            <li>
+                <similarTo>AmmoSet_Rifle</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.5</li>
+                        <li>0.3, 1.25</li>
+                        <li>0.5, 1</li>
+                        <li>0.6, 0.9</li>
+                    </points>
+                </curve>
+            </li>
+        </accuracyCurve>
+    </SupressionVeteancy.GunPlatformDef>
+</Defs>

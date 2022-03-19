@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <SupressionVeteancy.GunPlatformDef>
+        <defName>BigPistols</defName>
+        <label>Full size pistols</label>
+        <names>
+            <li>glock19</li>
+            <li>glock17</li>
+            <li>glock18</li>
+            <li>luger</li>
+            <li>p08</li>
+            <li>c96</li>
+            <li>1911</li>
+            <li>m1911</li>
+            <li>broomhandle</li>
+            <li>mnp</li>
+            <li>power</li>
+            <li>ruger</li>
+            <li>2011</li>
+            <li>glock</li>
+            <li>alien</li>
+            <li>usp</li>
+            <li>92</li>
+            <li>92fs</li>
+            <li>92f</li>
+            <li>m9</li>
+            <li>p7</li>
+        </names>
+        <!-- ===== NOT USED YET ===== -->
+        <!-- this is divided by 1000 and added per reload exp and divided by 10000 and added per shot exp -->
+
+        <!--<xpGain>1</xpGain>-->
+
+        <!-- x is percentage, y is direct mult -->
+        <reloadSpeedCurve>
+            <points>
+                <li>0, 1.5</li>
+                <li>0.3, 1.3</li>
+                <li>0.5, 1</li>
+                <li>0.7, 0.7</li>
+                <li>1, 0.5</li>
+            </points>
+        </reloadSpeedCurve>
+        <recoilCurve>
+           <li>
+                <similarTo>AmmoSet_Pistol</similarTo>
+                <curve>
+                        <points>
+                            <li>0, 3</li>
+                            <li>0.5, 1.5</li>
+                            <li>0.75, 1</li>
+                            <li>1, 0.75</li>
+                        </points>
+                </curve>
+           </li>
+        </recoilCurve>
+
+        <accuracyCurve>
+            <li>
+                <similarTo>AmmoSet_Pistol</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 2</li>
+                        <li>0.3, 1.4</li>
+                        <li>0.5, 1</li>
+                        <li>0.6, 0.9</li>
+                        <li>0.7, 0.88</li>
+                        <li>1, 0.75</li>
+                    </points>
+                </curve>
+            </li>
+        </accuracyCurve>
+    </SupressionVeteancy.GunPlatformDef>
+</Defs>

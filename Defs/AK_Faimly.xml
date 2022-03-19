@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <SupressionVeteancy.GunPlatformDef>
+        <defName>AK</defName>
+        <label>AK style guns</label>
+        <names>
+            <li>svd</li>
+            <li>ak74</li>
+            <li>ak74m</li>
+            <li>aks74</li>
+            <li>aks74u</li>
+            <li>pp19</li>
+            <li>akm</li>
+            <li>ak47</li>
+            <li>ak101</li>
+            <li>ak102</li>
+            <li>ak103</li>
+            <li>ak104</li>
+            <li>ak105</li>
+            <li>ak107</li>
+            <li>m76</li>
+            <li>m91</li>
+            <li>m90</li>
+            <li>beryl</li>
+            <li>wz96</li>
+            <li>tantal</li>
+            <li>saiga</li>
+            <li>ak12</li>
+            <li>ak15</li>
+            <li>ak74n</li>
+            <li>aks74n</li>
+            <li>rpk</li>
+            <li>rpk74</li>
+            <li>galil</li>
+            <li>56</li>
+            <li>81</li>
+            <li>vityaz</li>
+        </names>
+
+        <hand>left</hand>
+
+        <!-- ===== NOT USED YET ===== -->
+        <!-- this is divided by 1000 and added per reload exp and divided by 10000 and added per shot exp -->
+        <!--<xpGain>1</xpGain>-->
+
+        <!-- x is percentage, y is direct mult -->
+        <reloadSpeedCurve>
+            <points>
+                <li>0, 2</li>
+                <li>0.3, 1.5</li>
+                <li>0.5, 1</li>
+                <li>0.75, 0.95</li>
+                <li>0.95, 0.9</li>
+            </points>
+        </reloadSpeedCurve>
+        <recoilCurve>
+            <li>
+                <caliber>AmmoSet_762x39mmSoviet</caliber>
+                <curve>
+                    <points>
+                        <li>0, 1.5</li>
+                        <li>0.4, 1.25</li>
+                        <li>0.7, 1</li>
+                        <li>1, 0.9</li>
+                    </points>
+                </curve>
+            </li>
+            <li>
+                <similarTo>AmmoSet_Rifle</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 2.2</li>
+                        <li>0.4, 1.5</li>
+                        <li>0.7, 1.35</li>
+                        <li>0.8, 1.25</li>
+                        <li>0.9, 1.15</li>
+                        <li>0.9, 1.05</li>
+                        <li>1, 0.95</li>
+                    </points>
+                </curve>
+            </li>
+            <li>
+                <similarTo>AmmoSet_RifleIntermediate</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.25</li>
+                        <li>0.5, 0.95</li>
+                        <li>0.8, 0.85</li>
+                        <li>0.9, 0.75</li>
+                        <li>1, 0.65</li>
+                    </points>
+                </curve>
+            </li>
+            <li>
+                <similarTo>AmmoSet_Pistol</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.1</li>
+                        <li>0.5, 0.85</li>
+                        <li>0.8, 0.75</li>
+                        <li>0.9, 0.65</li>
+                        <li>1, 0.5</li>
+                    </points>
+                </curve>
+            </li>
+        </recoilCurve>
+        <accuracyCurve>
+            <li>
+                <caliber>AmmoSet_762x39mmSoviet</caliber>
+                <curve>
+                    <points>
+                        <li>0, 1.5</li>
+                        <li>0.5, 1.2</li>
+                        <li>0.8, 1</li>
+                        <li>0.9, 0.85</li>
+                        <li>1, 0.7</li>
+                    </points>
+                </curve>
+            </li>
+            <li>
+                <similarTo>AmmoSet_RifleIntermediate</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.35</li>
+                        <li>0.5, 1.05</li>
+                        <li>0.8, 0.75</li>
+                        <li>0.9, 0.7</li>
+                        <li>1, 0.65</li>
+                    </points>
+                </curve>
+            </li>
+            <li>
+                <similarTo>AmmoSet_Rifle</similarTo>
+                <curve>
+                    <points>
+                        <li>0, 1.75</li>
+                        <li>0.5, 1.45</li>
+                        <li>0.7, 1.2</li>
+                        <li>0.8, 1</li>
+                        <li>0.9, 0.8</li>
+                        <li>1, 0.7</li>
+                    </points>
+                </curve>
+            </li>
+        </accuracyCurve>
+    </SupressionVeteancy.GunPlatformDef>
+</Defs>
